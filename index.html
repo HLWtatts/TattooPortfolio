@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Tourney font for body -->
+  <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Koulen font for headers -->
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hayden Watson - Tattoo Portfolio</title>
+
   <style>
     body {
       font-family: 'Tourney', sans-serif;
@@ -18,9 +23,11 @@
       color: whitesmoke;
     }
 
+    /* Use Koulen for all headers */
     h1, h2, h3 {
-      font-family: fantasy, sans-serif;
-      color: whitesmoke; /* ensure headers stay light */
+      font-family: 'Koulen', cursive;
+      color: whitesmoke;
+      margin: 0;
     }
 
     #about p {
@@ -46,8 +53,10 @@
     }
 
     .header-text h1 {
+      font-size: 110px; /* restored original size */
       margin: 0;
-      font-size: 90px;
+      letter-spacing: 1px;
+      line-height: 1.1;
     }
 
     .header-text p {
@@ -70,40 +79,36 @@
     }
 
     #about h2 {
-      font-size: 50px;
       font-weight: normal;
+      font-size: 50px;
       color: whitesmoke;
+      margin-bottom: 15px;
     }
 
     .gallery {
       display: flex;
       justify-content: space-between;
-      gap: 0px; /* add some space between the two gallery sections */
+      gap: 0;
     }
 
     .gallery-section {
       width: 40%;
-      /* Optional: add padding or borders if you want */
     }
 
     .gallery-section h3 {
-      font-size: 50px;       /* Bigger font size for your headers */
-      margin-bottom: 15px;   /* Adds a little space below the header */
-      color: #ffffff;        /* Optional: match your footer’s nice red */
-      font-weight: bold;     /* Optional: make it stand out */
-      -webkit-font-smoothing: none;  /* Chrome, Safari, Opera */
-      -moz-osx-font-smoothing: auto; /* Firefox */
-      text-rendering: optimizeSpeed; /* Prioritize speed & sharpness */
+      font-weight: bold;
+      font-size: 50px;
+      margin-bottom: 15px;
+      color: #ffffff;
     }
 
-    /* Images inside each gallery section */
     .gallery-img {
-      width: 100%;        /* Make images fill their container */
-      max-width: 600px;   /* Adjust max width as you want */
-      height: auto;       /* Maintain aspect ratio */
+      width: 100%;
+      max-width: 600px;
+      height: auto;
       margin-bottom: 15px;
       border-radius: 8px;
-      display: block;     /* removes bottom whitespace */
+      display: block;
     }
 
     footer {
@@ -247,6 +252,5 @@
       <img src="Instagram.png" alt="Instagram" class="SocialInsta" />
     </a>
   </footer>
-
 </body>
 </html>
