@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hayden Watson - Tattoo Portfolio</title>
+  <style>    
+    body {
+        font-family: 'Tourney', sans-serif;
+        font-weight: 800;
+        font-variation-settings: "wght" 800;
+        margin: 0;
+        padding: 0;
+        background-color: #1e1e1e;
+        color: whitesmoke;
+      }
+      
+          
+          h1, h2, h3 {
+            font-family: fantasy, sans-serif;
+            color: whitesmoke;          /* ensure headers stay light */
+          }
+        
+               
+    #about p {
+        font-size: 22px;
+        line-height: 1.6;
+        font-style: italic;
+        font-weight: normal;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000000;
+      color: whitesmoke;
+      padding: 20px;
+      height: 250px; 
+      overflow: hidden;
+    }
+
+    .header-text {
+      max-width: 60%;
+    }
+
+    .header-text h1 {
+      margin: 0;
+      font-size: 90px;
+    }
+
+    .header-text p {
+      margin-top: 5px;
+      font-style: italic;
+    }
+
+    .artist-image {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    main {
+        padding: 20px;
+      }
+      
+      #about {
+        margin-bottom: 40px;       
+      }
+      #about h2 {
+        font-size: 50px;
+        font-weight: normal;
+        color: whitesmoke;
+      }
+      .gallery {
+        display: flex;
+        justify-content: space-between;
+        gap: 0px; /* add some space between the two gallery sections */
+      }
+      
+      .gallery-section {
+        width: 40%;
+        /* Optional: add padding or borders if you want */
+      }
+      .gallery-section h3 {
+        font-size: 50px;       /* Bigger font size for your headers */
+        margin-bottom: 15px;   /* Adds a little space below the header */
+        color: #ffffff;        /* Optional: match your footer’s nice red */
+        font-weight: bold;     /* Optional: make it stand out */
+      }
+      
+      /* Images inside each gallery section */
+      .gallery-img {
+        width: 100%;        /* Make images fill their container */
+        max-width: 600px;   /* Adjust max width as you want */
+        height: auto;       /* Maintain aspect ratio */
+        margin-bottom: 15px;
+        border-radius: 8px;
+        display: block;     /* removes bottom whitespace */
+        .gallery-section h3 {
+            /* your existing styles... */
+            
+            -webkit-font-smoothing: none;  /* Chrome, Safari, Opera */
+            -moz-osx-font-smoothing: auto; /* Firefox */
+            text-rendering: optimizeSpeed; /* Prioritize speed & sharpness */
+          }
+          
+      }
+      
+
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+      footer p {
+        font-size: 40px;
+        margin: 0;
+      }
+      
+    
+    footer a {
+        color: #af3434;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      
+      /*TikTok icon*/
+      .social-icon {
+        height: 50px;   
+        width: auto;
+        margin: 0 8px;
+        vertical-align: middle;
+        transition: transform 0.2s ease;
+      }
+      
+      /*Instagram icon*/
+      .SocialInsta {
+        height: 95px;    
+        width: auto;
+        margin: 0 8px;
+        vertical-align: middle;
+        transition: transform 0.2s ease;
+      }
+      
+      /*Hover effect*/
+      .social-icon:hover,
+      .SocialInsta:hover {
+        transform: scale(1.2);
+       
+          
+      }
+      
+          
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-text">
+      <h1>Hayden Watson</h1>
+      <p> 18 Year Old Aspiring Tattoo Artist– TikTok: @hlw.tatts</p>
+    </div>
+    <img src="HaydenImage.jpg" alt="HaydenImage" class="artist-image">
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am currently experimenting with many different art styles and have, in recent, grown fond of American Traditional. I typically work with black and grey ink with plans to broaden my colours in the future. 
+      </p>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery-section">
+          <h3>Fake Skin Tattoos</h3>
+          <img src="FakeSkin2.png" alt="Tattoo practice 1" class="gallery-img">
+          <img src="FakeSkin1.png" alt="Tattoo practice 2" class="gallery-img">
+        </div>
+        <div class="gallery-section">
+          <h3>Sketch Art</h3>
+          <img src="Drawing1.jpg" alt="Sketch 1" class="gallery-img">
+          <img src="Drawing2.jpg" alt="Sketch 2" class="gallery-img">
+          <img src="Drawing3.jpg" alt="Sketch 2" class="gallery-img">
+          <img src="Drawing4.jpg" alt="Sketch 2" class="gallery-img">
+        </div>
+      </section>      
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Follow Me On Socials!</p>
+    <a href="https://www.tiktok.com/@hlw.tatts" target="_blank">
+        <img src="tiktok.png" alt="TikTok" class="social-icon">
+    </a>
+    <a href="https://www.instagram.com/inkbyhayden" target="_blank">
+        <img src="Instagram.png" alt="Instagram" class="SocialInsta"
+    </a>
+  </footer>
+
+</body>
+</html>
